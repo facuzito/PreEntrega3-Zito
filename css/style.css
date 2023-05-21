@@ -305,6 +305,23 @@ ul {
         justify-content: space-between;
     }
 
+    .form-control.me-2 {
+        border-radius: 20px;
+    }
+
+    .btn.btn-outline-success {
+        color: rgb(255, 255, 255);
+        border-color: rgb(255, 255, 255);
+        border-radius: 20px;
+    }
+
+    .btn.btn-outline-success:hover {
+        color: white;
+        border: none;
+        background-color:  rgb(171, 30, 30);
+        transition: all 400ms ease;
+    }
+
 }
 
 @media (min-width: 375px) {
