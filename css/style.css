@@ -109,8 +109,9 @@ ul {
 }
 
 .header__container-logo a img {
-    width: 200px;
-    padding: 20px 0;
+    width: 180px;
+    margin-top: 10px;
+
 }
 
 .header__container-logo a img:hover {
@@ -134,7 +135,6 @@ ul {
     max-width: 1500px;
     margin: auto;
     display: grid;
-    align-items: center;
     grid-template-columns: 1fr;
     gap: 50px;
     padding: 10px;
@@ -142,16 +142,15 @@ ul {
 
 .hero__container-info {
     display: grid;
+    gap: 20px;
     text-align: center;
-    margin-top: a;
-    gap: 20px; 
 }
 
 .hero__container-info a {
     color: white;
     background-color: rgb(0, 0, 0);
-    padding: 10px 0px;
-    border-radius: 10px;
+    border-radius: 20px;
+    text-decoration: none;
 }
 
 .hero__container-info h1 {
@@ -165,6 +164,8 @@ ul {
 }
 .hero__container-video {
     width: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
 }
 
 /* cards */
@@ -172,18 +173,33 @@ ul {
     max-width: 1500px; 
     width: 100%;
     display: grid;
-
     gap: 10px;
-    padding: 0 10px;
 }
 
+.card__title {
+    display: flex;
+    max-width: 1500px;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 10px;
+}
+
+.card__title a {
+    text-decoration: none;
+    color: black;
+}
+
+.card__title a:hover {
+    transition: all 400ms ease;
+    color: rgb(171, 30, 30);
+}
 .card {
     width: 100%;
     display: grid;
     margin: auto;
     padding: 10px;
     background-color: rgb(255, 255, 255);
-    border-radius: 30px;
     box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
     text-align: center;
     cursor: default;
@@ -197,7 +213,7 @@ ul {
 }
 
 .card img {
-    border-radius: 30px;
+    border-radius: 25px;
     height: auto;
     width: 100%;
 }
@@ -212,6 +228,7 @@ ul {
     background-color: black;
     padding: 20px;
     border-radius: 20px;
+    text-decoration: none;
 }
 
 .card__info h3 {
@@ -269,7 +286,15 @@ ul {
 .footer__container-redes-list li a img {
     width: 25px
 }
+.footer__container-items a:hover {
+    color: red;
+    transition: all 400ms ease;
+}
 
+.footer__container-items a {
+    text-decoration: none;
+    color: black;
+}
 @media (min-width: 255px) {
     .header__container-navbar input {
         display: none;
@@ -303,17 +328,27 @@ ul {
         display: none;
     }
 
+
     .hero__container {
         gap: 10px;
     }
 
+    .hero__container-info {
+        gap: 5px;
+    }
+
     .card__container {
-        padding: 10px;
+        padding: 0 10px;
+    }
+
+    .card__container-info a {
+        text-decoration: none;
     }
 
     .footer__container-items {
         text-align: start;
         margin: 10px;
+        padding: 0;
     }
 }
 
@@ -376,6 +411,18 @@ ul {
 
     .d-flex button {
         border-radius: 20px;
+    }
+
+    .btn.btn-outline-success {
+        color: rgb(255, 255, 255);
+        border-color: rgb(255, 255, 255);
+    }
+
+    .btn.btn-outline-success:hover {
+        color: white;
+        border: none;
+        background-color:  rgb(171, 30, 30);
+        transition: all 400ms ease;
     }
 
     .header__container {
